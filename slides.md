@@ -16,6 +16,10 @@ h2 {
   font-weight: 450 !important;
   line-height: 1.8 !important;
 }
+
+blockquote {
+  font-size: 20 !important;
+}
 </style>
 
 <div class="absolute top-10">
@@ -27,13 +31,13 @@ h2 {
 
 <div class="absolute bottom-20">
 
-  <img src='https://raw.githubusercontent.com/pola-rs/polars-static/master/logos/polars-logo-dark.svg' width="500">
-  <br>
+  <img src="https://raw.githubusercontent.com/baggiponte/pymi-polars/main/assets/polars.svg" width="720">
   <br>
 
-    Fast multi-threaded, hybrid-streaming
-    DataFrame library 
+    Fast multi-threaded, hybrid-streaming DataFrame library
+    with a blazingly fast query engine, written in rust 🦀
 </div>
+
 
 ---
 
@@ -43,7 +47,7 @@ h2 {
 
 ## 🐼 What are `pandas` limits?
 
-## ♻️ Alternative data manipulation paradigms
+## ♻️ Data manipulation paradigms
 
 ## ❓ When should you look for an alternative?
 
@@ -56,6 +60,7 @@ h2 {
 ## 💤 Lazy execution
 
 </v-clicks>
+
 
 ---
 src: ./pages/1.md
