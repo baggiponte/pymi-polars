@@ -49,7 +49,7 @@ blockquote {
 
 ## ♻️ Data manipulation paradigms
 
-## ❓ When should you look for an alternative?
+## ❓ When should I replace `pandas`?
 
 ## 🐻‍❄️ Enter: polars
 
