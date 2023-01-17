@@ -305,6 +305,8 @@ Also, you would give up on the free optimisations that come with using `polars`.
 # 🔍 `polars` fundamentals 
 Tips and tricks
 
+<v-clicks>
+
 * Do not use lambda functions inside `polars` expressions: they will kill the native parallelism!
   * Chances are, you won't resort to them quite often as the expression syntax covers a lot of use cases.
 
@@ -323,14 +325,16 @@ q = (
 )
 
 df = q.collect()
-
 ```
+</v-clicks>
 
 
 ---
 
 # 🔍 `polars` fundamentals 
 Tips and tricks
+
+<v-clicks>
 
 If you didn't notice: `polars` `DataFrame`s have no indexes!
 But there are plenty of ways to work with time series data - `groupby_dynamic` and `groupby_rolling`:
@@ -339,7 +343,6 @@ But there are plenty of ways to work with time series data - `groupby_dynamic` a
 df = pl.read_csv("data/appleStock.csv", parse_dates=True)
 
 annual_average_df = df.groupby_dynamic("Date", every="1y").agg(pl.col("Close").mean())
-
 df_with_year = df.with_column(pl.col("Date").dt.year().alias("year"))
 ```
 
@@ -352,22 +355,20 @@ shape: (34, 2)
 ╞════════════╪═══════════╡
 │ 1981-01-01 ┆ 23.5625   │
 │ 1982-01-01 ┆ 11.0      │
-│ 1983-01-01 ┆ 30.543333 │
-│ 1984-01-01 ┆ 27.583333 │
 │ ...        ┆ ...       │
-│ 2011-01-01 ┆ 368.225   │
-│ 2012-01-01 ┆ 560.965   │
 │ 2013-01-01 ┆ 464.955   │
 │ 2014-01-01 ┆ 522.06    │
 └────────────┴───────────┘
-
 ```
+</v-clicks>
 
 
 ---
 
 # 🔍 `polars` fundamentals 
 Tips and tricks
+
+<v-clicks>
 
 There's also support for resampling, like `pandas.DataFrame.resample()`:
 
@@ -393,12 +394,15 @@ shape: (13, 3)
 │ 2021-12-16 03:00:00 ┆ a       ┆ 7.0    │
 └─────────────────────┴─────────┴────────┘
 ```
+</v-clicks>
 
 
 ---
 
 # 🔍 `polars` fundamentals 
 Tips and tricks
+
+<v-clicks>
 
 Why is it necessary to use `expressions` inside of `contexts`?
 Because they are actually syntactic sugar wrappers around the lazy API:
@@ -407,6 +411,25 @@ Because they are actually syntactic sugar wrappers around the lazy API:
 df.groupby("foo").agg([pl.col("bar").sum()])
 # is actually running
 (df.lazy().groupby("foo").agg([pl.col("bar").sum()])).collect()
+```
+</v-clicks>
+
+
+---
+
+# 💤 Lazy execution
+When the data is stored locally
+
+```python{all|4|5-7|8}
+import polars as pl
+
+( 
+    pl.scan_csv("https://j.mp/iriscsv")
+    .filter(pl.col("sepal_length") > 5)
+    .groupby("species", maintain_order=True)
+    .agg(pl.all().sum())
+    .collect()
+)
 ```
 
 
