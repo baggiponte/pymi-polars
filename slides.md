@@ -51,11 +51,9 @@ blockquote {
 
 ## ❓ When should I replace `pandas`?
 
-## 🐻‍❄️ Enter: polars
+## 🐻‍❄️ Enter: `polars`
 
-## 💾 How to install
-
-## 🔍 Differences and similarities
+## 🔍 `polars` fundamentals
 
 ## 💤 Lazy execution
 
@@ -63,7 +61,11 @@ blockquote {
 
 
 ---
-src: ./pages/1.md
+src: ./pages/01-introduction.md
+---
+
+---
+src: ./pages/02-tutorial.md
 ---
 
 ---
