@@ -282,6 +282,9 @@ A comparison of dataframe libraries
     </tr>
 </table>
 
+<br>
+
+🔌 Shameless plug: check out my 🕶️ [`awesome-pandas-alternatives`](https://github.com/baggiponte/awesome-pandas-alternatives), where I collected these frameworks!
 
 ---
 
@@ -290,15 +293,13 @@ A quick checklist
 
 <v-clicks>
 
-* When the data becomes too big, or
-* When you need more processing capabilities to perform complex operations
+* When the data becomes too big, or queries too complex to express with `pandas` syntax.
+* When you need more processing capabilities to perform complex operations.
 * If you need distributed computing, `apache-spark` is still popular.
   * `dask` is nice too, but is still just `pandas` with parallelism: no multithreaded, same memory issues.
   * `datafusion` is being quickly developed (in rust, *by the way* 🦀)
   * There are all the (closed) compute engines: databricks, snowflake...
-* But maybe you can get away with out-of-core libraries and spare you the hassle of managing your clusters.
-  * Wrapper libraries don't seem to pick up
-* **Here is where `polars` shines** 🐻‍❄️✨.
+* But maybe setting up a bunch of clusters is a bit too much, and you would like to get away with a performant, in-memory solution... **here is where `polars` shines** 🐻‍❄️✨.
 
 </v-clicks>
 
