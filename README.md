@@ -1,11 +1,33 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# 🐻‍❄️ Get started with `polars`
 
-To start the slide show:
+Source code for the single page application (SPA) of the [`polars`](https://github.com/pola-rs/polars)'s tutorial I held @[Python Milano](https://github.com/PythonMilano).
 
-- `npm install`
-- `npm run dev`
-- visit http://localhost:3030
+* 📽️ [Live](https://www.youtube.com/live/ujodUwEj5L4?feature=share&t=206)
 
-Edit the [slides.md](./slides.md) to see the changes.
+## 🛩️ How to run
 
-Learn more about Slidev on [documentations](https://sli.dev/).
+1. Clone the repo
+
+```bash
+# with github CLI
+gh repo clone baggiponte/pymi-polars
+
+# with git
+git clone git@github.com:baggiponte/pymi-polars
+```
+
+2. Install `npm` and run the following:
+
+```bash
+npm install
+npm run dev
+```
+
+3. Visit http://localhost:3030
+
+> **Note**
+>
+> Credits:
+> 
+> * [`slidev`](https://github.com/slidevjs/slidev) is an amazing framework to build slides from markdown and host them.
+> * [`polars`](https://github.com/pola-rs/polars) is a blazingly fast DataFrames library implemented in Rust using Apache Arrow Columnar Format as the memory model.
