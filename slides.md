@@ -24,7 +24,7 @@ blockquote {
 
 <div class="absolute top-10">
 
-    👤 Luca Baggi, Data Scientist @Futura
+    👤 Luca Baggi, ML Engineer @Futura
     🐍 Python Milano 📆 17/01/2022
 </div>
 
