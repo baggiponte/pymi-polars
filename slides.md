@@ -31,7 +31,7 @@ blockquote {
 
 <div class="absolute bottom-20">
 
-  <img src="polars.svg" width="720">
+  <img src="/polars.svg" width="720">
   <br>
 
     Fast multi-threaded, hybrid-streaming DataFrame library
