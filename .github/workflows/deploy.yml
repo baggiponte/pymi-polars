@@ -8,7 +8,7 @@ on:
       - slides.md
       - pages/**
       - components/**
-      - assets
+      - public
 jobs:
   deploy:
     runs-on: ubuntu-latest
