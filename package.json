@@ -4,7 +4,8 @@
   "scripts": {
     "build": "slidev build",
     "dev": "slidev --open",
-    "export": "slidev export"
+    "export": "slidev export",
+    "deploy": "slidev build slides.md --base /pymi-polars"
   },
   "dependencies": {
     "@slidev/cli": "^0.38.3",
