@@ -9,6 +9,8 @@ on:
       - pages/**
       - components/**
       - public
+      - package.json
+      - package-lock.json
 jobs:
   deploy:
     runs-on: ubuntu-latest
