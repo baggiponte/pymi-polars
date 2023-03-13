@@ -1,3 +1,9 @@
+## 1.2.1 (2023-03-13)
+
+### Fix
+
+- **npm**: specify the correct private pkg name
+
 ## 1.2.0 (2023-03-11)
 
 ### Feat
