@@ -1,5 +1,5 @@
 {
-  "name": "slidev",
+  "name": "pymi-polars",
   "private": true,
   "scripts": {
     "build": "slidev build",
