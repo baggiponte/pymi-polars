@@ -1,5 +1,7 @@
 # 🐻‍❄️ Get started with `polars`
 
+[![cookiecutter slidev](https://img.shields.io/badge/cookiecutter-slidev-D4AA00?logo=cookiecutter&logoColor=fff)](https://github.com/baggiponte/cookiecutter-slidev)
+
 Source code for the single page application (SPA) of the [`polars`](https://github.com/pola-rs/polars)'s tutorial I held @[Python Milano](https://github.com/PythonMilano).
 
 * 📽️ [Live](https://www.youtube.com/live/ujodUwEj5L4?feature=share&t=206)
