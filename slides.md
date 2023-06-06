@@ -7,20 +7,8 @@ favicon: >-
   https://raw.githubusercontent.com/pola-rs/polars-static/master/logos/polars-logo-dark.svg
 ---
 
-<style>
-h1 {
-  font-weight: 600 !important;
-}
 
-h2 {
-  font-weight: 450 !important;
-  line-height: 1.8 !important;
-}
 
-blockquote {
-  font-size: 20 !important;
-}
-</style>
 
 <div class="absolute top-10">
 
