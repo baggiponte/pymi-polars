@@ -87,7 +87,7 @@ layout: intro
 # 🙏 Thank you!
 ## 🎉 Special thanks to [Futura](https://www.futura.study/) & [PyMi](http://milano.python.it/)!
 
-Please share your feedback! Just email me at lucabaggi [at] duck.com
+Please share your feedback! My address is lucabaggi [at] duck.com
 
 <div class="absolute right-5 top-5">
 <img height="150" width="150"  src="/qr-linkedin.svg">
