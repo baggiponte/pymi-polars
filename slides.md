@@ -7,34 +7,23 @@ favicon: >-
   https://raw.githubusercontent.com/pola-rs/polars-static/master/logos/polars-logo-dark.svg
 ---
 
+<img src="/logo-polars.svg" width="720">
+<br>
 
+## A Lightning-fast DataFrame library for Rust and Python
 
+<div class="absolute bottom-10">
 
-<div class="absolute top-10">
-
-    👤 Luca Baggi, ML Engineer @Futura
-    🐍 Python Milano 📆 17/01/2022
-</div>
-
-
-<div class="absolute bottom-20">
-
-  <img src="/polars.svg" width="720">
-  <br>
-
-    Fast multi-threaded, hybrid-streaming DataFrame library
-    with a blazingly fast query engine, written in rust 🦀
-</div>
-
-<div class="absolute bottom-5">
-
-<a href="github.com/baggiponte/pymi-cookiecutter">
-
-<img height="25" width="25" align="left" style="margin-right:0.5em" src="https://cdn.simpleicons.org/github"> <u><i>source</i></u>
-
-</a>
+    👤 Luca Baggi
+    💼 ML Engineer @Futura
+    🐍 Organiser @Python Milano
 
 </div>
+
+<div class="absolute right-5 top-5">
+<img height="150" width="150"  src="/qr-github.svg">
+</div>
+
 
 ---
 
@@ -80,9 +69,26 @@ src: ./pages/02-tutorial.md
 * My decently-sized [`Data & DataFrames`](https://github.com/stars/baggiponte/lists/data-dataframes) list on GitHub.
 * If you are interested in a proper course, check this one on [udemy](https://www.udemy.com/course/data-analysis-with-polars/) by Liam Brannigan.
 
+
 ---
 layout: intro
 ---
 
-# 🙏 Thank you for your time!
+# 🙋 Questions?
+
+🔗 Check out the [docs](https://pola-rs.github.io/polars/py-polars/html/index.html) or the [user guide](https://pola-rs.github.io/polars-book/user-guide/index.html)!
+
+
+---
+layout: intro
+---
+
+# 🙏 Thank you!
 ## 🎉 Special thanks to [Futura](https://www.futura.study/) & [PyMi](http://milano.python.it/)!
+
+Please share your feedback with me: just email me at lucabaggi [at] duck.com
+
+<div class="absolute right-5 top-5">
+<img height="150" width="150"  src="/qr-linkedin.svg">
+</div>
+
