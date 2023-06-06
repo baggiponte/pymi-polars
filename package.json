@@ -2,8 +2,9 @@
   "name": "pymi-polars",
   "private": true,
   "scripts": {
-    "build": "slidev build",
     "preview": "slidev --open",
+    "format": "slidev format",
+    "build": "slidev build",
     "export": "slidev export",
     "deploy": "slidev build slides.md --base /pymi-polars"
   },
