@@ -5,6 +5,7 @@ highlighter: shiki
 colorSchema: light
 favicon: >-
   https://raw.githubusercontent.com/pola-rs/polars-static/master/logos/polars-logo-dark.svg
+title: A Lightning-fast DataFrame library for Rust and Python
 ---
 
 <img src="/logo-polars.svg" width="720">
@@ -91,4 +92,3 @@ Please share your feedback with me: just email me at lucabaggi [at] duck.com
 <div class="absolute right-5 top-5">
 <img height="150" width="150"  src="/qr-linkedin.svg">
 </div>
-
