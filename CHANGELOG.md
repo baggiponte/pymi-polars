@@ -1,3 +1,13 @@
+## 1.4.0 (2023-06-06)
+
+### Feat
+
+- update first and last slide
+
+### Refactor
+
+- move style in style.css
+
 ## 1.3.0 (2023-03-13)
 
 ### Feat
