@@ -9,7 +9,7 @@
     "deploy": "slidev build slides.md --base /pymi-polars"
   },
   "dependencies": {
-    "@slidev/cli": "^0.42.4",
+    "@slidev/cli": "^0.42.5",
     "@slidev/theme-default": "*",
     "@slidev/theme-seriph": "*"
   }
