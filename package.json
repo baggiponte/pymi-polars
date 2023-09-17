@@ -1,16 +1,9 @@
 {
   "name": "pymi-polars",
   "private": true,
-  "scripts": {
-    "preview": "slidev --open",
-    "format": "slidev format",
-    "build": "slidev build",
-    "export": "slidev export",
-    "deploy": "slidev build slides.md --base /pymi-polars"
-  },
   "dependencies": {
-    "@slidev/cli": "^0.42.7",
-    "@slidev/theme-default": "*",
-    "@slidev/theme-seriph": "*"
+    "@slidev/cli": "^0.43.4",
+    "@slidev/theme-default": "^0.21.2",
+    "@slidev/theme-seriph": "^0.21.3"
   }
 }
