@@ -1,4 +1,5 @@
-name: Deploy pages
+name: Deploy Slideshow to GitHub Pages
+
 on:
   workflow_dispatch:
   push:
@@ -7,26 +8,51 @@ on:
     paths:
       - .github/workflows/deploy.yml
       - slides.md
-      - pages/**
-      - components/**
       - public
       - package.json
       - package-lock.json
+
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup node
+        uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version-file: '.tool-versions'
+
       - name: Install dependencies
         run: npm install
-      - name: Build
-        run: npm run deploy
-      - name: Deploy pages
-        uses: crazy-max/ghaction-github-pages@v3
+
+      - name: Build HTML
+        run: npx slidev build --base=/pymi-polars
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          path: dist
+
+  deploy:
+    needs: build
+    
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/configure-pages@v3
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
