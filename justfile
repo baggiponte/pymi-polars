@@ -13,6 +13,10 @@ set positional-arguments
   print "⚠️ A manual step is required to deploy the slideshow to GitHub Pages:"
   print "Go to the repository Settings -> Pages -> Source and select GitHub Actions."
 
+# Update dependencies
+@update:
+  npm update
+
 # Create a git and GitHub repo, install dependencies
 @init: ensure-git ensure-github install
 
