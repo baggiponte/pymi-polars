@@ -4,7 +4,7 @@
 
 Source code for the tutorial on [`polars`](https://github.com/pola-rs/polars) at [Python Milano](https://github.com/PythonMilano).
 
-- 📽️ [Live](https://www.youtube.com/watch?v=XsxrhGlkyk0)
+- 📽️ [Live](https://www.youtube.com/live/ujodUwEj5L4?si=LM4nP5r433tb_4zy&t=210)
 
 ## 🛩️ How to run
 
